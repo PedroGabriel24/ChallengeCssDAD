@@ -1,0 +1,36 @@
+.carsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.carItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.carItem img {
+    width: 140px;
+    height: 120px;
+}
+
+.carItem h1 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.carItem p {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    border-bottom: none;
+}

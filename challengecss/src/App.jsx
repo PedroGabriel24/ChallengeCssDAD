@@ -1,5 +1,7 @@
 import './App.css'
+import CarsComponent from './components/Cars/CarsComponent';
 import MyComponent from './components/MyComponent'
+import Title from './components/Title';
 
 function App() {
   const n = 15;
@@ -8,6 +10,9 @@ function App() {
   return (
     <>
       <div className='app'>
+        <Title />
+  
+        <CarsComponent style={{ margin_: "red" }}/>
         <h1>React com css</h1>
 
         <MyComponent/>
