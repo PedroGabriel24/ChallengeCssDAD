@@ -1,5 +1,5 @@
 import React from "react";
-import "./CarsComponent.css";
+import styles from "./CarsComponent.module.css";
 const TUCSON_IMAGE =
   "https://www.webmotors.com.br/imagens/prod/347318/HYUNDAI_TUCSON_1.6_16V_TGDI_GASOLINA_LIMITED_ECOSHIFT_34731809010154692.webp";
 
@@ -27,9 +27,9 @@ const cars = [
 
 const CarsComponent = () => {
   return (
-    <div className="carsList">
+    <div className={styles.carsList}>
       {cars.map((car, index) => (
-        <div key={index} className="carItem">
+        <div key={index} className={styles.carItem}>
           <h1>{car.carName}</h1>
           <img src={car.carImage} alt={car.carName} />
           <p>{car.carDescription}</p>
